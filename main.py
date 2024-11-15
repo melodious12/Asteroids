@@ -18,7 +18,7 @@ def main():
 				return
     
 		for entity in updatable:
-			entity.update()
+			entity.update(dt)
 
 		screen.fill("black")
 
