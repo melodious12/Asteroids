@@ -44,8 +44,8 @@ def main():
 		for entity in drawable:
 			entity.draw(screen)
 
-		shots.update(dt)
-		shots.draw(screen)
+		for shot in shots:
+			player.shoot(shot)
 
 		pygame.display.flip()
 
