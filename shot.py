@@ -8,7 +8,7 @@ class Shot(CircleShape):
         self.add(self.containers)
         self.position = pygame.math.Vector2(x, y)
         self.rect = pygame.Rect(self.position.x, self.position.y, SHOT_RADIUS*2, SHOT_RADIUS*2)
-        self.velocity = pygame.math.Vector2(0, PLAYER_SHOOT_SPEED).rotate(self.position)
+        self.velocity = pygame.math.Vector2(0, PLAYER_SHOOT_SPEED).rotate(self.direction)
 
     def draw(self, screen):
         pygame.draw.circle(screen, "blue", self.position, self.radius, 2)
