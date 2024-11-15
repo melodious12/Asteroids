@@ -45,7 +45,7 @@ def main():
 			entity.draw(screen)
 
 		for shot in shots:
-			player.shoot(shot)
+			player.shoot(shots)
 
 		pygame.display.flip()
 
